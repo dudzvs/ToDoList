@@ -15,25 +15,31 @@ body {
   background-color: $bg-theme;
   color: $text-color;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 header {
   min-width: 100%;
-  padding-bottom: 3.4rem;
+  padding-bottom: 7.4rem;
   background: $bg-image;
-  background-size: 100%;
+  background-size: cover;
   min-height: 20rem;
 }
 
 h1 {
   color: $title-color;
-  margin-left: -3rem;
-  font-size: 3.8rem;
+  margin-left: -4.5rem;
+  font-size: 4rem;
   letter-spacing: 1.4rem;
 }
 
 .flex {
   display: flex;
+
+  &-rev {
+    flex-direction: row-reverse;
+  }
 
   &-col {
     flex-direction: column;
@@ -53,5 +59,9 @@ h1 {
 
   &-ai-c {
     align-items: center;
+  }
+
+  &-ac-c {
+    align-content: center;
   }
 }
