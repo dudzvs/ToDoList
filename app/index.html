@@ -8,14 +8,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Todo app</title>
 
-  <link rel="stylesheet" href="../dist/main.css">
+  <link rel="stylesheet" href="../dist/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>  
+<body class="theme-dark">  
+  <div class="container flex flex-col flex-jc-c flex-ai-c">
+    <header class="header flex flex-jc-sa flex-ai-c">
+      <h1>TODO</h1>
+      <div class="header__theme-switcher">
+        <input type="checkbox" name="theme" id="theme">
+        <label for="theme"></label>
+      </div>
+    </header>
+
+    <!--<main>
+      <div class="add-new-task">
+        <span></span>
+        <input type="text" name="addItem" id="addItem" placeholder="Create a new todo...">
+      </div>
+
+      <section class="content">
+        <ul>
+          <li>
+            <label class="list-item">
+              <input type="checkbox" name="todoItem" id="">
+              <span class="checkMark"></span>
+              <span class="text">text 1</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
   <!--Todo
 
   <!-- Add dynamic number items left
