@@ -16,7 +16,7 @@
   </style>
 </head>
 <body class="theme-dark">  
-  <div class="container flex flex-col flex-jc-c flex-ai-c">
+  <div class="container flex flex-col">
     <header class="header flex flex-jc-sa flex-ai-c">
       <h1>TODO</h1>
       <div class="header__theme-switcher">
@@ -25,16 +25,43 @@
       </div>
     </header>
 
-    <!--<main>
-      <div class="add-new-task">
+    <main class="main flex flex-col">
+      <div class="main__add-new-task flex flex-ai-c">
         <span></span>
-        <input type="text" name="addItem" id="addItem" placeholder="Create a new todo...">
+        <input type="text" class="add-item" name="addItem" id="addItem" placeholder="Create a new todo...">
       </div>
 
-      <section class="content">
+      <section class="main__content flex flex-col flex-jc-c flex-ac-c">
         <ul>
           <li>
-            <label class="list-item">
+            <label class="main__list-item">
+              <input type="checkbox" name="todoItem" id="">
+              <span class="checkMark"></span>
+              <span class="text">text 1</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+
+          <li>
+            <label class="main__list-item">
+              <input type="checkbox" name="todoItem" id="">
+              <span class="checkMark"></span>
+              <span class="text">text 1</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+
+          <li>
+            <label class="main__list-item">
+              <input type="checkbox" name="todoItem" id="">
+              <span class="checkMark"></span>
+              <span class="text">text 1</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+
+          <li>
+            <label class="main__list-item">
               <input type="checkbox" name="todoItem" id="">
               <span class="checkMark"></span>
               <span class="text">text 1</span>
