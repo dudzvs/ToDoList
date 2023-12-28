@@ -1,0 +1,25 @@
+.header {
+
+  &__theme-switcher {
+
+   & #theme {
+      display: none;
+    }
+
+    & #theme + label::before {
+      content: '';
+      background: url('/assets/images/icon-sun.svg');
+      display: block;
+      margin-right: -3rem;
+      margin-bottom: 1.5rem;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;      
+    }
+
+    & #theme:checked + label::before {
+      background: url('/assets/images/icon-moon.svg');
+    }
+  }
+
+}

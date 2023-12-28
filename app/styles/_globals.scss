@@ -1,0 +1,57 @@
+@use 'index.scss' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $bg-theme;
+  color: $text-color;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  min-width: 100%;
+  padding-bottom: 3.4rem;
+  background: $bg-image;
+  background-size: 100%;
+  min-height: 20rem;
+}
+
+h1 {
+  color: $title-color;
+  margin-left: -3rem;
+  font-size: 3.8rem;
+  letter-spacing: 1.4rem;
+}
+
+.flex {
+  display: flex;
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
