@@ -15,7 +15,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="theme-dark">  
+<body>  
   <div class="container flex flex-col">
     <header class="header flex flex-jc-sa flex-ai-c">
       <h1>TODO</h1>
@@ -69,6 +69,30 @@
             <span class="remove"></span>
           </li>
         </ul>
+
+        <div class="countdown-items flex flex-jc-sb">
+          <div class="items-left"><span>2 </span>Items left</div>
+          <span class="clear">Clear Completed</span>
+        </div>
+      </section>
+      <section class="bottom-items flex flex-jc-c">        
+        <div class="filter">
+          <label for="">
+            <input type="radio" name="filter" id="all" checked>
+            <span>All</span>
+          </label>
+
+          <label for="">
+            <input type="radio" name="filter" id="active">
+            <span>Active</span>
+          </label>
+
+          <label for="">
+            <input type="radio" name="filter" id="completed">
+            <span>Completed</span>
+          </label>
+        </div>
+        
       </section>
     </main>
   </div>
