@@ -122,5 +122,61 @@
         display: block;
       }
     }
+
+    .countdown-items {
+      padding: 2rem;
+      font-size: 1.3rem;
+      color: $links-color;
+
+      .items-left {
+        cursor: pointer;
+
+        &:hover {
+          color: $title-color;
+        }
+      }
+
+      .clear {
+        cursor: pointer;
+
+        &:hover {
+          color: $title-color;
+        }
+      }
+    }
   }
+
+  .bottom-items {
+    display: flex;
+    background: $primary-color;
+    width: 80%;
+    color: $links-color;
+    padding: 1.6rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-weight: bold;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    label {
+      cursor: pointer;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    .filter {
+      display: inherit;
+      gap: 1.5rem;
+    }
+  }
+
 }
