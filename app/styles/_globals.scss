@@ -5,6 +5,26 @@ html {
   font-size: 62.5%;
 }
 
+html[data-theme = 'light'] {
+  --primary-color: #{$primary-color-light};
+  --bg-image: #{$bg-image-light};
+  --bg-theme: #{$bg-theme-light};
+  --bg-image-desktop: #{$bg-image-desktop-light};
+  --text-color: #{$text-color-light};
+  --border-color: #{$border-color-light};
+  --hover-color: #{$hover-color-ligth};
+}
+
+html[data-theme = 'dark'] {
+  --bg-image: #{$bg-image};
+  --bg-image-desktop: #{$bg-image-desktop-dark};
+  --bg-theme: #{$bg-theme};
+  --primary-color: #{$primary-color};
+  --text-color: #{$text-color};
+  --border-color: #{$border-color};
+  --hover-color: #{$hover-color};
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -12,8 +32,8 @@ html {
 }
 
 body {
-  background-color: $bg-theme;
-  color: $text-color;
+  background-color: var(--bg-theme);
+  color: var(--text-color);
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -22,7 +42,11 @@ body {
 header {
   min-width: 100%;
   padding-bottom: 7.4rem;
-  background: $bg-image;
+  background: var(--bg-image);
+  @include breakpoints-up(large) {
+    background: var(--bg-image-desktop);
+    background-size: cover;
+  }
   background-size: cover;
   min-height: 20rem;
 }

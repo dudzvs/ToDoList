@@ -2,10 +2,18 @@
 
 // colors
   $bg-image: 0 0 url('/assets/images/bg-mobile-dark.jpg') no-repeat;
+  $bg-image-desktop-dark: 0 0 url('/assets/images/bg-desktop-dark.jpg') no-repeat;
+  $bg-image-desktop-light: 0 0 url('/assets/images/bg-desktop-light.jpg') no-repeat;
+  $bg-image-light: 0 0 url('/assets/images/bg-mobile-light.jpg') no-repeat;
+  $bg-theme-light: #F2F2F2;
   $bg-theme: #171823;
   $primary-color: hsla(235, 24%, 19%, 1);
+  $primary-color-light:#fff;
   $title-color: #fff;
   $text-color: hsla(234, 39%, 85%, 1);
+  $text-color-light:hsla(235, 19%, 35%, 1);
   $hover-color: hsla(220, 98%, 61%, 1);
+  $hover-color-ligth: hsla(235, 19%, 35%, 1);
   $border-color: hsla(237, 14%, 26%, 1);
+  $border-color-light: hsla(236, 32%, 92%, 1);
   $links-color: hsla(235, 16%, 43%, 1);
